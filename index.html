@@ -1,0 +1,454 @@
+<title>Moment of Travel</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Bodoni+Moda:ital,wght@0,500;0,700;0,900;1,500;1,600&family=Yellowtail&family=Jost:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+
+<header class="site-nav">
+  <div class="container nav-row">
+    <button class="wordmark" data-route="home" aria-label="Moment of Travel, home">
+      <img src="assets/logo.png" alt="Moment of Travel" class="wordmark-logo">
+    </button>
+    <div class="nav-cta">
+      <div class="nav-links-wrap">
+        <nav class="links" aria-label="Primary">
+          <button data-route="home">Home</button>
+          <button data-route="destinations">Destinations</button>
+          <button data-route="contact">Contact</button>
+          <a href="tourism-trips.html">Tourism</a>
+          <a href="umrah-trips.html">Umrah</a>
+          <a href="flights.html">Aviation</a>
+          <a href="ar.html" class="lang-link">العربية</a>
+        </nav>
+      </div>
+      <button class="btn btn-solid btn-sm" data-route="contact">Plan a Trip</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="var(--on-a)" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+    <button data-route="home">Home</button>
+    <button data-route="destinations">Destinations</button>
+    <button data-route="contact">Contact</button>
+    <a href="tourism-trips.html">Tourism</a>
+    <a href="umrah-trips.html">Umrah</a>
+    <a href="flights.html">Aviation</a>
+    <a href="ar.html" class="lang-link-mobile">العربية</a>
+    <button class="btn btn-accent" data-route="contact">Plan a Trip →</button>
+  </nav>
+</header>
+
+<a class="whatsapp-float" href="https://wa.me/966549447703" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15.001c0 2.647.87 5.093 2.347 7.077L4.6 28.4l6.472-1.703a11.94 11.94 0 0 0 4.929 1.05h.005c6.627 0 12-5.373 12-12S22.628 3 16.001 3zm7.034 17.146c-.298.837-1.48 1.532-2.42 1.732-.643.135-1.482.243-4.31-.926-3.617-1.498-5.945-5.166-6.127-5.406-.176-.24-1.457-1.94-1.457-3.7 0-1.76.92-2.626 1.246-2.985.298-.328.652-.41.87-.41.218 0 .436.002.626.012.2.01.47-.076.735.561.298.72.982 2.48 1.067 2.66.084.18.14.39.028.63-.11.24-.168.39-.334.6-.168.21-.352.47-.503.63-.168.18-.343.375-.147.735.196.36.872 1.44 1.873 2.332 1.286 1.148 2.372 1.505 2.732 1.673.36.168.57.14.784-.084.213-.226.917-1.07 1.163-1.44.246-.37.49-.31.826-.187.336.126 2.132 1.005 2.498 1.187.365.18.61.27.7.42.09.152.09.876-.208 1.713z"/></svg>
+</a>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marqueeTrack"></div>
+</div>
+
+<main class="container">
+
+<!-- ============ HOME ============ -->
+  <section class="page" id="page-home">
+    <div class="hero">
+      <div class="hero-poster">
+        <div class="hero-poster-meta">
+          <span>@momentoftravel</span>
+          <span class="hero-poster-meta-brand">Moment of Travel</span>
+          <span>Est. 2015</span>
+        </div>
+        <div class="hero-poster-stage">
+          <div class="hero-poster-photo" id="heroArt"></div>
+          <h1 class="hero-poster-headline">
+            <span class="part-welcome">Welcome<br>to</span>
+            <span class="part-brand">Moment<span class="ln2">of <em>Travel</em></span></span>
+          </h1>
+        </div>
+        <p class="hero-poster-tagline">Every trip is made of a few good <em>moments</em>. We plan around them.</p>
+      </div>
+
+      <div class="hero-intro">
+        <span class="eyebrow">Full-service travel planning</span>
+        <p class="lede">Moment of Travel builds custom itineraries around the two or three things you actually came for — not a checklist of landmarks. One planner, one document, real people on the ground if anything goes sideways.</p>
+        <div class="hero-cta-row">
+          <button class="btn btn-accent" data-route="contact">Start Planning →</button>
+          <button class="btn" data-route="destinations">Browse Destinations</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="block profile-section" id="introduction">
+      <div class="block-head">
+        <div>
+          <span class="eyebrow">Introduction</span>
+          <h2>Who we are</h2>
+        </div>
+      </div>
+      <p class="lead-in" style="max-width:74ch; font-size:1.05rem;">Moment of Travel is a specialized tourism and aviation services company dedicated to delivering seamless travel experiences and operational excellence across every journey. We're a reliable aviation services provider offering comprehensive solutions for overfly and landing permits, GSA (Airport Operations), and global aviation support across Saudi Arabia, the GCC, and worldwide destinations.</p>
+    </section>
+
+    <section class="block profile-section" id="vision-mission">
+      <div class="block-head">
+        <div>
+          <span class="eyebrow">Vision &amp; Mission</span>
+          <h2>Vision &amp; Mission</h2>
+        </div>
+      </div>
+      <div class="mv-grid">
+        <div class="mv-card">
+          <h3>Our Mission</h3>
+          <p>To ensure every customer experience with Moment of Travel is positive, professional, and aligned with the highest aviation and tourism standards.</p>
+        </div>
+        <div class="mv-card">
+          <h3>Our Vision</h3>
+          <p>To become a trusted regional leader in aviation and travel services by setting new benchmarks in quality, safety, and customer satisfaction.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block profile-section" id="strategic-objectives">
+      <div class="block-head">
+        <div>
+          <span class="eyebrow">Strategic Objectives</span>
+          <h2>Strategic Objectives</h2>
+        </div>
+      </div>
+      <div>
+        <div class="process-row">
+          <div><h3>Regulatory compliance</h3><p>Ensuring full compliance with industry regulations and airline-specific requirements, enhancing reliability and trust among airline customers.</p></div>
+        </div>
+        <div class="process-row">
+          <div><h3>Airline partnerships</h3><p>Securing partnerships with additional airlines to expand the scope of representation services provided.</p></div>
+        </div>
+        <div class="process-row">
+          <div><h3>Specialized services</h3><p>Offering specialized services — such as VIP handling and environmentally friendly handling solutions — to differentiate our services from competitors.</p></div>
+        </div>
+        <div class="process-row">
+          <div><h3>Network expansion</h3><p>Expanding operations to include additional airports in key regions, and establishing a presence in vital centers with high demand.</p></div>
+        </div>
+        <div class="process-row">
+          <div><h3>Reputation &amp; trust</h3><p>Building a strong reputation by prioritizing friendliness, safety, and reliability, making Moment of Travel a preferred partner in the aviation handling industry.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block profile-section" id="our-services">
+      <div class="block-head">
+        <div>
+          <span class="eyebrow">Our Services</span>
+          <h2>Our Services</h2>
+        </div>
+      </div>
+      <p class="lead-in" style="max-width:74ch; margin-bottom:28px;">Alongside our established tourism packages, Moment of Travel delivers a full spectrum of aviation support services, including:</p>
+      <div class="services-grid">
+        <div class="service-chip"><div><h3>Travel Agency Services</h3><p>Umrah packages, HOTAC, ticketing &amp; more</p></div></div>
+        <div class="service-chip"><div><h3>GSA (Airport Operations) &amp; Supervision</h3></div></div>
+        <div class="service-chip"><div><h3>Overfly &amp; Landing Permits</h3><p>Saudi Arabia, GCC &amp; Worldwide</p></div></div>
+        <div class="service-chip"><div><h3>Global Aviation Support</h3></div></div>
+        <div class="service-chip"><div><h3>In-Flight Catering</h3></div></div>
+        <div class="service-chip"><div><h3>Fuel Services</h3></div></div>
+        <div class="service-chip"><div><h3>Crew Logistics Services</h3></div></div>
+        <div class="service-chip"><div><h3>Concierge Services</h3></div></div>
+        <div class="service-chip"><div><h3>24/7 Operations Support</h3></div></div>
+      </div>
+    </section>
+
+    <section class="block profile-section" id="contact-us" style="padding-bottom:80px;">
+      <div class="block-head">
+        <div>
+          <span class="eyebrow">Contact Us</span>
+          <h2>Contact Us</h2>
+        </div>
+      </div>
+      <div class="contact-info-card" style="max-width:520px;">
+        <div class="row"><span>Office</span><span>Medina, Saudi Arabia</span></div>
+        <div class="row"><span>Email</span><a href="mailto:info@momentoftravels.com" style="color:inherit;">info@momentoftravels.com</a></div>
+        <div class="row"><span>Phone / WhatsApp</span><a href="https://wa.me/966549447703" target="_blank" rel="noopener" style="color:inherit;">+966 54 944 7703</a></div>
+      </div>
+      <button class="btn btn-accent" data-route="contact" style="margin-top:22px;">Get in touch →</button>
+    </section>
+  </section>
+
+
+<!-- ============ DESTINATIONS ============ -->
+  <section class="page" id="page-destinations" hidden>
+    <section class="block" style="padding-top:56px;">
+      <span class="eyebrow">Eight routes we know cold</span>
+      <h1 style="margin-top:14px; font-size:clamp(2rem,3.6vw,2.8rem);">Destinations</h1>
+      <p class="lead-in" style="margin-top:12px;">Every route below is one we've run in the last two years and would send our own family on. Prices are per person, based on double occupancy.</p>
+
+      <div class="filter-row" style="margin-top:32px;" id="filterRow"></div>
+      <div class="dest-grid wide" id="allDestGrid"></div>
+    </section>
+  </section>
+
+  
+<!-- ============ CONTACT ============ -->
+  <section class="page" id="page-contact" hidden>
+    <section class="block" style="padding-top:56px;">
+      <span class="eyebrow">Usually a five-day turnaround</span>
+      <h1 style="margin-top:14px; font-size:clamp(2rem,3.6vw,2.8rem);">Start planning your trip</h1>
+      <p class="lead-in" style="margin-top:12px;">Tell us roughly where and when, and we'll reply with a first-draft itinerary — free, no obligation to book.</p>
+
+      <div class="contact-grid" style="margin-top:40px;">
+        <div id="contactFormWrap">
+          <form id="tripForm" name="trip-request">
+            <div class="field-row">
+              <div class="field"><label for="fName">Full name</label><input id="fName" name="name" required placeholder="Jordan Lee"></div>
+              <div class="field"><label for="fEmail">Email</label><input id="fEmail" name="email" type="email" required placeholder="jordan@email.com"></div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="fDest">Destination</label>
+                <select id="fDest" name="destination">
+                  <option value="Not sure yet">Not sure yet — send suggestions</option>
+                </select>
+              </div>
+              <div class="field"><label for="fTravelers">Travelers</label><input id="fTravelers" name="travelers" type="number" min="1" value="2"></div>
+            </div>
+            <div class="field-row">
+              <div class="field"><label for="fDates">Approximate dates</label><input id="fDates" name="dates" placeholder="e.g. late September, 9 nights, flexible"></div>
+              <div class="field">
+                <label for="fBudget">Budget per person</label>
+                <select id="fBudget" name="budget">
+                  <option>Under SAR 9,500</option>
+                  <option>SAR 9,500 – 15,000</option>
+                  <option>SAR 15,000 – 24,500</option>
+                  <option>SAR 24,500+</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="fMsg">What are you actually hoping to get out of this trip?</label>
+              <textarea id="fMsg" name="message" rows="4" placeholder="e.g. slow mornings, one big hike, food-focused, first trip together..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-accent">Send trip request →</button>
+          </form>
+        </div>
+
+        <div class="contact-info-card">
+          <h3 style="color:var(--on-c);">Talk to a planner directly</h3>
+          <p style="margin-top:8px;">No call centers — you'll work with one planner from first call to landing home.</p>
+          <div class="row"><span>Email</span><a href="mailto:info@momentoftravels.com" style="color:inherit;text-decoration:none;">info@momentoftravels.com</a></div>
+          <div class="row"><span>Phone / WhatsApp</span><a href="https://wa.me/966549447703" target="_blank" rel="noopener" style="color:inherit;">+966 54 944 7703</a></div>
+          <div class="row"><span>Studio</span><a href="https://maps.app.goo.gl/8gnkPCFvvcEovdVB7?g_st=iw" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Medina, Saudi Arabia</a></div>
+          <div class="row"><span>Hours</span><span>Mon–Fri, 8am–6pm PT</span></div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <span class="wordmark">
+        <img src="assets/logo.png" alt="Moment of Travel" class="wordmark-logo wordmark-logo-footer">
+      </span>
+      <p style="margin-top:16px; max-width:34ch;">Custom itineraries built around a handful of good moments, not a checklist of landmarks.</p>
+      <form class="newsletter-row" id="newsletterForm" action="https://4fcf9942.sibforms.com/serve/MUIFADHC22-h0RZ5U_CZ_LMVoGU3AjCE00yLiaDcUlEcDr9rz6F8Qim8swlC3sm7eUpEw7DmJyVl2zkX31-By3KNsJeOPIGxaFfn8SR557Cig2BilV2tLIJRG6TIYs4JEoqypkaFgtMMXGAbeVwLESmvB-pZ8nNf_uA0KKnwTPiIeazMGxZnkq7li3FcYe5Iu4OfJ5Fm1TVX5zsfiQ==" method="POST" target="brevoHiddenFrame" novalidate>
+        <input type="email" name="EMAIL" id="newsletterEmail" required placeholder="Your email" aria-label="Email for newsletter">
+        <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute; left:-9999px; width:1px; height:1px;">
+        <input type="hidden" name="locale" value="en">
+        <button class="btn btn-solid btn-sm" id="newsletterBtn" type="submit">Join</button>
+      </form>
+    </div>
+    <div>
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="#" data-route="home">Home</a></li>
+        <li><a href="#" data-route="destinations">Destinations</a></li>
+        <li><a href="#" data-route="contact">Contact</a></li>
+        <li><a href="tourism-trips.html">Tourism</a></li>
+        <li><a href="umrah-trips.html">Umrah</a></li>
+        <li><a href="flights.html">Aviation</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Social</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Pinterest</a></li>
+        <li><a href="#">Newsletter archive</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Office</h4>
+      <ul>
+        <li style="color:var(--on-a-muted); font-size:0.92rem;"><a href="https://maps.app.goo.gl/8gnkPCFvvcEovdVB7?g_st=iw" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Medina, Saudi Arabia</a></li>
+        <li style="color:var(--on-a-muted); font-size:0.92rem;"><a href="mailto:info@momentoftravels.com" style="color:inherit;text-decoration:none;">info@momentoftravels.com</a></li>
+        <li style="color:var(--on-a-muted); font-size:0.92rem;"><a href="https://wa.me/966549447703" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Phone / WhatsApp: +966 54 944 7703</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-word">Moment of Travel</div>
+  <div class="footer-bottom">
+    <span>© 2026 Moment of Travel. All trips are hypothetical demo content.</span>
+    <span>Photos via Wikimedia Commons, CC BY / CC BY‑SA / CC0 — Martin Falbisoner, Bernard Gagnon, Eric Kilby, Saudi Press Agency, Jorge Láscar, Dietmar Rabich, Timothy A. Gonsalves, Dronepicr, Chensiyuan</span>
+  </div>
+</footer>
+<iframe name="brevoHiddenFrame" style="display:none" title="newsletter signup" aria-hidden="true"></iframe>
+
+<script src="assets/forms.js"></script>
+<script>
+(function(){
+  "use strict";
+
+  /* ---------------- Data ---------------- */
+  var DESTINATIONS = [
+    {name:"Kyoto", region:"Kansai, Japan", type:"city", img:"photos/kyoto3.jpg", nights:5, price:10800, season:"Mar–May, Oct–Nov"},
+    {name:"Amalfi Coast", region:"Campania, Italy", type:"coastal", img:"photos/amalfi.jpg", nights:6, price:12950, season:"May–Sep"},
+    {name:"AlUla", region:"Al Madinah, Saudi Arabia", type:"desert", img:"photos/alula2.jpg", nights:6, price:14900, season:"Oct–Mar"},
+    {name:"Wadi Rum", region:"Aqaba, Jordan", type:"desert", img:"photos/wadirum2.jpg", nights:5, price:8950, season:"Mar–May, Sep–Nov"},
+    {name:"Santorini", region:"Cyclades, Greece", type:"coastal", img:"photos/santorini.jpg", nights:5, price:11700, season:"Jun–Sep"},
+    {name:"Fez", region:"Fès-Meknès, Morocco", type:"city", img:"photos/fez.jpg", nights:4, price:8000, season:"Oct–Apr"},
+    {name:"Lisbon & the Algarve", region:"Portugal", type:"coastal", img:"photos/algarve.jpg", nights:6, price:10400, season:"Apr–Oct"},
+    {name:"Banff", region:"Canadian Rockies", type:"mountain", img:"photos/banff2.jpg", nights:6, price:13800, season:"Jun–Sep"}
+  ];
+  var POPULAR = ["Kyoto","Amalfi Coast","AlUla","Santorini"];
+  var TYPE_LABEL = {mountain:"Mountain", coastal:"Coastal", desert:"Desert", city:"City"};
+
+  var PACKAGES = [
+    {name:"The Weekender", days:"4–5 nights · one destination", price:7050, featured:false,
+      items:["Self-guided with full itinerary","Concierge support by chat","Boutique hotel tier","One flight coordinated"]},
+    {name:"The Explorer", days:"7–9 nights · two destinations", price:12950, featured:true,
+      items:["Small-group departures, 12 max","Two guided excursions included","Mid-to-upper hotel tier","24/7 on-trip phone line"]},
+    {name:"The Odyssey", days:"14+ nights · multi-country", price:27000, featured:false,
+      items:["Fully private itinerary & guide","All internal flights & transfers","Upper-tier stays throughout","Dedicated planner, start to finish"]}
+  ];
+
+  var QUOTES = [
+    {q:"Our AlUla itinerary had exactly one moving part we had to think about: showing up.", a:"Layla A., Riyadh"},
+    {q:"They rebuilt our whole Morocco route in six hours after a flight cancellation. We never even felt the stress.", a:"Faisal M., Jeddah"},
+    {q:"Best money we've spent on a vacation — and I say that as someone who usually plans everything myself.", a:"Noura S., Dubai"}
+  ];
+
+  /* ---------------- Renderers ---------------- */
+  function destCard(d){
+    return '<div class="dest-card" data-cat="'+d.type+'">'
+      + '<div class="dest-poster"><img src="'+d.img+'" alt="'+d.name+', '+d.region+'" loading="lazy"></div>'
+      + '<div class="dest-body">'
+        + '<span class="dest-tag">'+TYPE_LABEL[d.type]+'</span>'
+        + '<h3>'+d.name+'</h3>'
+        + '<div class="region">'+d.region+'</div>'
+        + '<div class="dest-meta"><span>'+d.nights+' nights · '+d.season+'</span><span class="price">from SAR '+d.price.toLocaleString()+'</span></div>'
+      + '</div></div>';
+  }
+
+  var allGrid = document.getElementById("allDestGrid");
+  function renderAllDest(filter){
+    allGrid.innerHTML = DESTINATIONS.filter(function(d){ return filter === "all" || d.type === filter; }).map(destCard).join("");
+  }
+  renderAllDest("all");
+
+  var filterRow = document.getElementById("filterRow");
+  var CATS = ["all","mountain","coastal","desert","city"];
+  filterRow.innerHTML = CATS.map(function(c){
+    return '<button class="filter-pill" data-cat="'+c+'" aria-pressed="'+(c==="all")+'">'+(c==="all"?"All":TYPE_LABEL[c])+'</button>';
+  }).join("");
+  filterRow.addEventListener("click", function(e){
+    var btn = e.target.closest(".filter-pill");
+    if(!btn) return;
+    filterRow.querySelectorAll(".filter-pill").forEach(function(b){ b.setAttribute("aria-pressed", String(b === btn)); });
+    renderAllDest(btn.dataset.cat);
+  });
+
+  var fDest = document.getElementById("fDest");
+  DESTINATIONS.forEach(function(d){
+    var opt = document.createElement("option");
+    opt.value = d.name; opt.textContent = d.name + " — " + d.region;
+    fDest.appendChild(opt);
+  });
+
+  document.getElementById("heroArt").innerHTML = '<img src="photos/hero_green2.jpg" alt="A cypress-lined road in Tuscany">';
+
+  var tickerItems = DESTINATIONS.map(function(d){ return d.name; });
+  var tickerHTML = tickerItems.map(function(t){ return '<span>'+t+'</span><span class="dot">·</span>'; }).join("");
+  document.getElementById("marqueeTrack").innerHTML = tickerHTML + tickerHTML;
+
+  /* ---------------- Router ---------------- */
+  var ROUTES = ["home","destinations","contact"];
+  function go(route){
+    if(ROUTES.indexOf(route) === -1) route = "home";
+    ROUTES.forEach(function(r){
+      document.getElementById("page-"+r).hidden = (r !== route);
+    });
+    document.querySelectorAll("nav.links button, .wordmark[data-route]").forEach(function(b){
+      if(b.dataset.route === route) b.setAttribute("aria-current","page");
+      else b.removeAttribute("aria-current");
+    });
+    if(location.hash.slice(2) !== route){ history.replaceState(null, "", "#/"+route); }
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({top:0, behavior: reduce ? "auto" : "smooth"});
+  }
+  document.addEventListener("click", function(e){
+    var btn = e.target.closest("[data-route]");
+    if(!btn) return;
+    e.preventDefault();
+    go(btn.dataset.route);
+    mobileMenu.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded","false");
+  });
+
+  var menuToggle = document.getElementById("menuToggle");
+  var mobileMenu = document.getElementById("mobileMenu");
+  menuToggle.addEventListener("click", function(){
+    var open = mobileMenu.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(open));
+  });
+  window.addEventListener("hashchange", function(){ go(location.hash.slice(2) || "home"); });
+  go(location.hash.slice(2) || "home");
+
+  /* ---------------- Contact form (sent via assets/forms.js) ---------------- */
+  function netlifyFormSubmit(data){
+    return window.motSubmitForm(data);
+  }
+
+  document.getElementById("tripForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    var form = e.target;
+    var name = document.getElementById("fName").value.trim() || "there";
+    var dest = document.getElementById("fDest").value;
+    var submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending…";
+    var payload = {
+      "form-name": "trip-request",
+      "name": name,
+      "email": document.getElementById("fEmail").value.trim(),
+      "destination": dest,
+      "travelers": document.getElementById("fTravelers").value,
+      "dates": document.getElementById("fDates").value.trim(),
+      "budget": document.getElementById("fBudget").value,
+      "message": document.getElementById("fMsg").value.trim()
+    };
+    netlifyFormSubmit(payload).then(function(){
+      document.getElementById("contactFormWrap").innerHTML =
+        '<div class="success-box">'
+        + '<span class="eyebrow">Request received</span>'
+        + '<h3 style="margin-top:10px; font-size:1.3rem;">Thanks, '+name+' — we\'re on it.</h3>'
+        + '<p style="margin-top:8px;">We\'ll reply within one business day with a first-draft itinerary for <strong style="color:var(--on-a);">'+dest+'</strong>. In the meantime, feel free to browse more <span data-route="destinations" style="text-decoration:underline; cursor:pointer;">destinations</span>.</p>'
+        + '</div>';
+    }).catch(function(){
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Send trip request →";
+      alert("Something went wrong sending your request — please try again, or email info@momentoftravels.com directly.");
+    });
+  });
+
+  document.getElementById("newsletterForm").addEventListener("submit", function(){
+    var btn = document.getElementById("newsletterBtn");
+    var input = document.getElementById("newsletterEmail");
+    if(!input.value.trim()) return;
+    setTimeout(function(){
+      btn.textContent = "Joined ✓";
+      btn.disabled = true;
+      input.disabled = true;
+    }, 500);
+  });
+
+  
+})();
+</script>

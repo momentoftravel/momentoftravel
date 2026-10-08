@@ -1,0 +1,202 @@
+<title>Aviation Support — Moment of Travel</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;0,700;0,900;1,500;1,600&family=Yellowtail&family=Jost:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+
+<header class="site-nav">
+  <div class="container nav-row">
+    <a class="wordmark" href="index.html#/home" aria-label="Moment of Travel, home">
+      <img src="assets/logo.png" alt="Moment of Travel" class="wordmark-logo">
+    </a>
+    <div class="nav-cta">
+      <div class="nav-links-wrap">
+        <nav class="links" aria-label="Primary">
+          <a href="index.html#/home">Home</a>
+          <a href="index.html#/destinations">Destinations</a>
+          <a href="index.html#/contact">Contact</a>
+          <a href="tourism-trips.html">Tourism</a>
+          <a href="umrah-trips.html">Umrah</a>
+          <a href="flights.html" aria-current="page">Aviation</a>
+          <a href="flight-support-ar.html" class="lang-link">العربية</a>
+        </nav>
+      </div>
+      <a class="btn btn-solid btn-sm" href="index.html#/contact">Plan a Trip</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="var(--on-a)" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+    <a href="index.html#/home">Home</a>
+    <a href="index.html#/destinations">Destinations</a>
+    <a href="index.html#/contact">Contact</a>
+    <a href="tourism-trips.html">Tourism</a>
+    <a href="umrah-trips.html">Umrah</a>
+    <a href="flights.html" aria-current="page">Aviation</a>
+    <a href="flight-support-ar.html" class="lang-link-mobile">العربية</a>
+    <a class="btn btn-accent" href="index.html#/contact">Plan a Trip →</a>
+  </nav>
+</header>
+
+<a class="whatsapp-float" href="https://wa.me/966549447703" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15.001c0 2.647.87 5.093 2.347 7.077L4.6 28.4l6.472-1.703a11.94 11.94 0 0 0 4.929 1.05h.005c6.627 0 12-5.373 12-12S22.628 3 16.001 3zm7.034 17.146c-.298.837-1.48 1.532-2.42 1.732-.643.135-1.482.243-4.31-.926-3.617-1.498-5.945-5.166-6.127-5.406-.176-.24-1.457-1.94-1.457-3.7 0-1.76.92-2.626 1.246-2.985.298-.328.652-.41.87-.41.218 0 .436.002.626.012.2.01.47-.076.735.561.298.72.982 2.48 1.067 2.66.084.18.14.39.028.63-.11.24-.168.39-.334.6-.168.21-.352.47-.503.63-.168.18-.343.375-.147.735.196.36.872 1.44 1.873 2.332 1.286 1.148 2.372 1.505 2.732 1.673.36.168.57.14.784-.084.213-.226.917-1.07 1.163-1.44.246-.37.49-.31.826-.187.336.126 2.132 1.005 2.498 1.187.365.18.61.27.7.42.09.152.09.876-.208 1.713z"/></svg>
+</a>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marqueeTrack"></div>
+</div>
+
+<main class="container">
+
+<!-- ============ AVIATION SUPPORT ============ -->
+  <section class="page" id="page-flight-support">
+    <section class="block" style="padding-top:56px; padding-bottom:0;">
+      <span class="eyebrow">الدعم العام للطيران</span>
+      <h1 style="margin-top:14px; font-size:clamp(2rem,3.6vw,2.8rem);">Aviation Support</h1>
+      <p class="lead-in" style="margin-top:12px;">Ticket booking and reissue, schedule changes, airport transfers, and day-of support if a flight is delayed or cancelled — for any traveler, whether or not you booked a trip with us.</p>
+      <div class="sub-tabs">
+        <a href="airline-general-agent.html">Airline General Agent (GSA)</a>
+        <a href="flight-support.html" aria-current="page">Aviation Support</a>
+      </div>
+    </section>
+
+    <section class="band-c">
+      <div class="container" style="max-width:640px;">
+        <p style="color:var(--on-c-muted);">Reach the desk directly: <a href="mailto:flights@momentoftravels.com" style="color:var(--accent); text-decoration:none;">flights@momentoftravels.com</a> · Phone / WhatsApp <a href="https://wa.me/966549447703" target="_blank" rel="noopener" style="color:var(--accent); text-decoration:none;">+966 54 944 7703</a> · Daily, 6am–11pm PT</p>
+        <div id="flightFormWrap" style="margin-top:16px;">
+          <form id="flightForm" name="flight-support">
+            <div class="field"><label for="gfName" style="color:var(--on-c);">Full name</label><input id="gfName" name="name" required placeholder="Jordan Lee" style="background:var(--surface-b);"></div>
+            <div class="field"><label for="gfMobile" style="color:var(--on-c);">Mobile number</label><input id="gfMobile" name="mobile" required placeholder="+966 5x xxx xxxx" style="background:var(--surface-b);"></div>
+            <div class="field"><label for="gfMsg" style="color:var(--on-c);">What do you need help with?</label><textarea id="gfMsg" name="message" rows="3" placeholder="e.g. booking, reissue, delayed flight..." style="background:var(--surface-b);"></textarea></div>
+            <button type="submit" class="btn btn-ghost-c">Contact aviation support →</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="block profile-section" id="our-partners">
+      <div class="block-head">
+        <div>
+          <span class="eyebrow">Our Partners</span>
+          <h2>Our Partners</h2>
+        </div>
+      </div>
+      <p class="lead-in" style="max-width:74ch; font-size:1.05rem;">We proudly provide services to Wizz Air, Mauritania Airlines, and AJet Airlines, delivering measurable improvements in operational performance. Over the past two years — particularly within the last six months — our airline partners have achieved significant gains in On-Time Performance (OTP). Starting from levels below 75%, we have successfully elevated OTP to between 75% and 90% of Wizz Air's target benchmarks, demonstrating our ability to enhance punctuality, reliability, and service quality. Our results reflect a customer-focused approach, operational precision, and a strong commitment to delivering consistent, high-value aviation services.</p>
+      <div class="stat-strip" style="grid-template-columns:repeat(2,1fr); max-width:480px; margin-top:24px;">
+        <div class="stat-cell"><div class="num">&lt;75%</div><div class="lbl">OTP before</div></div>
+        <div class="stat-cell"><div class="num">75–90%</div><div class="lbl">OTP now, of Wizz Air's benchmark</div></div>
+      </div>
+    </section>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <span class="wordmark">
+        <img src="assets/logo.png" alt="Moment of Travel" class="wordmark-logo wordmark-logo-footer">
+      </span>
+      <p style="margin-top:16px; max-width:34ch;">Custom itineraries built around a handful of good moments, not a checklist of landmarks.</p>
+      <form class="newsletter-row" id="newsletterForm" action="https://4fcf9942.sibforms.com/serve/MUIFADHC22-h0RZ5U_CZ_LMVoGU3AjCE00yLiaDcUlEcDr9rz6F8Qim8swlC3sm7eUpEw7DmJyVl2zkX31-By3KNsJeOPIGxaFfn8SR557Cig2BilV2tLIJRG6TIYs4JEoqypkaFgtMMXGAbeVwLESmvB-pZ8nNf_uA0KKnwTPiIeazMGxZnkq7li3FcYe5Iu4OfJ5Fm1TVX5zsfiQ==" method="POST" target="brevoHiddenFrame" novalidate>
+        <input type="email" name="EMAIL" id="newsletterEmail" required placeholder="Your email" aria-label="Email for newsletter">
+        <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute; left:-9999px; width:1px; height:1px;">
+        <input type="hidden" name="locale" value="en">
+        <button class="btn btn-solid btn-sm" id="newsletterBtn" type="submit">Join</button>
+      </form>
+    </div>
+    <div>
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="index.html#/home">Home</a></li>
+        <li><a href="index.html#/destinations">Destinations</a></li>
+        <li><a href="index.html#/contact">Contact</a></li>
+        <li><a href="tourism-trips.html">Tourism</a></li>
+        <li><a href="umrah-trips.html">Umrah</a></li>
+        <li><a href="flights.html">Aviation</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Social</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Pinterest</a></li>
+        <li><a href="#">Newsletter archive</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Office</h4>
+      <ul>
+        <li style="color:var(--on-a-muted); font-size:0.92rem;"><a href="https://maps.app.goo.gl/8gnkPCFvvcEovdVB7?g_st=iw" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Medina, Saudi Arabia</a></li>
+        <li style="color:var(--on-a-muted); font-size:0.92rem;"><a href="mailto:info@momentoftravels.com" style="color:inherit;text-decoration:none;">info@momentoftravels.com</a></li>
+        <li style="color:var(--on-a-muted); font-size:0.92rem;"><a href="https://wa.me/966549447703" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Phone / WhatsApp: +966 54 944 7703</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-word">Moment of Travel</div>
+  <div class="footer-bottom">
+    <span>© 2026 Moment of Travel. All trips are hypothetical demo content.</span>
+    <span>Photos via Wikimedia Commons, CC BY / CC BY‑SA / CC0 — Martin Falbisoner, Bernard Gagnon, Eric Kilby, Saudi Press Agency, Jorge Láscar, Dietmar Rabich, Timothy A. Gonsalves, Dronepicr, Chensiyuan</span>
+  </div>
+</footer>
+<iframe name="brevoHiddenFrame" style="display:none" title="newsletter signup" aria-hidden="true"></iframe>
+
+<script src="assets/forms.js"></script>
+<script>
+(function(){
+  "use strict";
+
+  var menuToggle = document.getElementById("menuToggle");
+  var mobileMenu = document.getElementById("mobileMenu");
+  menuToggle.addEventListener("click", function(){
+    var open = mobileMenu.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(open));
+  });
+
+  var tickerNames = ["Kyoto","Amalfi Coast","AlUla","Wadi Rum","Santorini","Fez","Lisbon & the Algarve","Banff"];
+  var tickerHTML = tickerNames.map(function(t){ return '<span>'+t+'</span><span class="dot">·</span>'; }).join("");
+  document.getElementById("marqueeTrack").innerHTML = tickerHTML + tickerHTML;
+
+  document.getElementById("newsletterForm").addEventListener("submit", function(){
+    var btn = document.getElementById("newsletterBtn");
+    var input = document.getElementById("newsletterEmail");
+    if(!input.value.trim()) return;
+    setTimeout(function(){
+      btn.textContent = "Joined ✓";
+      btn.disabled = true;
+      input.disabled = true;
+    }, 500);
+  });
+
+  function netlifyFormSubmit(data){
+    return window.motSubmitForm(data);
+  }
+
+  document.getElementById("flightForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    var form = e.target;
+    var name = document.getElementById("gfName").value.trim() || "there";
+    var submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending…";
+    var payload = {
+      "form-name": "flight-support",
+      "name": name,
+      "mobile": document.getElementById("gfMobile").value.trim(),
+      "message": document.getElementById("gfMsg").value.trim()
+    };
+    netlifyFormSubmit(payload).then(function(){
+      document.getElementById("flightFormWrap").innerHTML =
+        '<div class="success-box">'
+        + '<span class="eyebrow">Message sent</span>'
+        + '<h3 style="margin-top:10px; font-size:1.3rem;">Thanks, '+name+'.</h3>'
+        + '<p style="margin-top:8px;">Our aviation support desk has received your message and will get back to you shortly.</p>'
+        + '</div>';
+    }).catch(function(){
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Contact aviation support →";
+      alert("Something went wrong sending your message — please try again, or email flights@momentoftravels.com directly.");
+    });
+  });
+})();
+</script>

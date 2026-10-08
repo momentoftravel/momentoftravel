@@ -1,0 +1,228 @@
+<title>طلب رحلة خاصة — لحظة سفر</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/styles-ar.css">
+
+<div dir="rtl" lang="ar">
+
+<header class="site-nav">
+  <div class="container nav-row">
+    <a class="wordmark" href="index.html#/home" aria-label="لحظة سفر، الصفحة الرئيسية">
+      <img src="assets/logo.png" alt="لحظة سفر" class="wordmark-logo">
+    </a>
+    <div class="nav-cta">
+      <div class="nav-links-wrap">
+        <nav class="links" aria-label="التنقل الرئيسي">
+          <a href="index.html#/home">الرئيسية</a>
+          <a href="index.html#/destinations">الوجهات</a>
+          <a href="index.html#/contact">تواصل معنا</a>
+          <a href="tourism-trips-ar.html">السياحة</a>
+          <a href="umrah-trips-ar.html">العمرة</a>
+          <a href="flights-ar.html">الطيران</a>
+          <a href="special-trip-request.html" class="lang-link">EN</a>
+        </nav>
+      </div>
+      <a class="btn btn-solid btn-sm" href="index.html#/contact">خطّط لرحلتك</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="افتح القائمة" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="var(--on-a)" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="قائمة الجوال">
+    <a href="index.html#/home">الرئيسية</a>
+    <a href="index.html#/destinations">الوجهات</a>
+    <a href="index.html#/contact">تواصل معنا</a>
+    <a href="tourism-trips-ar.html">السياحة</a>
+    <a href="umrah-trips-ar.html">العمرة</a>
+    <a href="flights-ar.html">الطيران</a>
+    <a href="special-trip-request.html" class="lang-link-mobile">English</a>
+    <a class="btn btn-accent" href="index.html#/contact">خطّط لرحلتك ←</a>
+  </nav>
+</header>
+
+<a class="whatsapp-float" href="https://wa.me/966549447703" target="_blank" rel="noopener" aria-label="راسلنا عبر واتساب">
+  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15.001c0 2.647.87 5.093 2.347 7.077L4.6 28.4l6.472-1.703a11.94 11.94 0 0 0 4.929 1.05h.005c6.627 0 12-5.373 12-12S22.628 3 16.001 3zm7.034 17.146c-.298.837-1.48 1.532-2.42 1.732-.643.135-1.482.243-4.31-.926-3.617-1.498-5.945-5.166-6.127-5.406-.176-.24-1.457-1.94-1.457-3.7 0-1.76.92-2.626 1.246-2.985.298-.328.652-.41.87-.41.218 0 .436.002.626.012.2.01.47-.076.735.561.298.72.982 2.48 1.067 2.66.084.18.14.39.028.63-.11.24-.168.39-.334.6-.168.21-.352.47-.503.63-.168.18-.343.375-.147.735.196.36.872 1.44 1.873 2.332 1.286 1.148 2.372 1.505 2.732 1.673.36.168.57.14.784-.084.213-.226.917-1.07 1.163-1.44.246-.37.49-.31.826-.187.336.126 2.132 1.005 2.498 1.187.365.18.61.27.7.42.09.152.09.876-.208 1.713z"/></svg>
+</a>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marqueeTrack"></div>
+</div>
+
+<main class="container">
+
+<!-- ============ طلب رحلة خاصة ============ -->
+  <section class="page" id="page-special-request">
+    <section class="block" style="padding-top:56px; padding-bottom:0;">
+      <span class="eyebrow">Special Trip Request</span>
+      <h1 style="margin-top:14px; font-size:clamp(1.9rem,3.4vw,2.6rem);">طلب رحلة خاصة</h1>
+      <p class="lead-in" style="margin-top:12px;">تحتاج شيء ما يناسب باقة جاهزة؟ أخبرنا بالتفاصيل وبيتواصل معك أحد مخططينا مباشرة.</p>
+      <div class="sub-tabs">
+        <a href="special-trip-request-ar.html" aria-current="page">طلب رحلة خاصة</a>
+        <a href="tourism-trips-ar.html">الرحلات السياحية</a>
+        <a href="umrah-trips-ar.html">رحلات العمرة</a>
+      </div>
+    </section>
+
+    <section class="block" style="padding-top:0;">
+      <div id="specialFormWrap" style="max-width:720px;">
+        <form id="specialForm" name="special-trip-request">
+          <div class="field-row">
+            <div class="field"><label for="sName">الاسم الكامل</label><input id="sName" name="name" required placeholder="سارة أحمد"></div>
+            <div class="field"><label for="sMobile">رقم الجوال</label><input id="sMobile" name="mobile" required placeholder="05xxxxxxxx"></div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label for="sEmail">البريد الإلكتروني</label><input id="sEmail" name="email" type="email" required placeholder="name@email.com"></div>
+            <div class="field">
+              <label for="sService">الخدمة</label>
+              <select id="sService" name="service">
+                <option>رحلة عمرة</option>
+                <option>رحلة سياحية</option>
+                <option>حجز طيران</option>
+                <option>مساعدة في التأشيرة</option>
+                <option>رحلة جماعية / شركات</option>
+                <option>غير ذلك</option>
+              </select>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label for="sQty">عدد المسافرين</label><input id="sQty" name="travelers" type="number" min="1" value="1"></div>
+            <div class="field"><label for="sDeparture">تاريخ الذهاب</label><input id="sDeparture" name="departure_date" type="date"></div>
+          </div>
+          <div class="field"><label for="sReturn">تاريخ العودة</label><input id="sReturn" name="return_date" type="date"></div>
+          <div class="field">
+            <label for="sNeeds">بإيش تحتاج بالضبط؟</label>
+            <textarea id="sNeeds" name="message" rows="4" placeholder="أخبرنا عن الرحلة اللي في بالك..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-accent">إرسال الطلب ←</button>
+        </form>
+      </div>
+
+      <div class="email-callout">
+        <div>
+          <h3 style="color:var(--on-c);">تفضّل التواصل بالإيميل؟</h3>
+          <p>أرسل تفاصيل رحلتك لإيميل الطلبات وبيرد عليك أحد المخططين خلال يوم عمل واحد.</p>
+        </div>
+        <bdi dir="ltr"><a href="mailto:requests@momentoftravels.com">requests@momentoftravels.com</a></bdi>
+      </div>
+    </section>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <span class="wordmark">
+        <img src="assets/logo.png" alt="لحظة سفر" class="wordmark-logo wordmark-logo-footer">
+      </span>
+      <p style="margin-top:16px; max-width:34ch;">برامج سفر مفصّلة على مقاسك، حول حفنة لحظات تستحق، لا قائمة معالم طويلة.</p>
+      <form class="newsletter-row" id="newsletterForm" action="https://4fcf9942.sibforms.com/serve/MUIFADHC22-h0RZ5U_CZ_LMVoGU3AjCE00yLiaDcUlEcDr9rz6F8Qim8swlC3sm7eUpEw7DmJyVl2zkX31-By3KNsJeOPIGxaFfn8SR557Cig2BilV2tLIJRG6TIYs4JEoqypkaFgtMMXGAbeVwLESmvB-pZ8nNf_uA0KKnwTPiIeazMGxZnkq7li3FcYe5Iu4OfJ5Fm1TVX5zsfiQ==" method="POST" target="brevoHiddenFrame" novalidate>
+        <input type="email" name="EMAIL" id="newsletterEmail" required placeholder="بريدك الإلكتروني" aria-label="البريد الإلكتروني للنشرة">
+        <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute; left:-9999px; width:1px; height:1px;">
+        <input type="hidden" name="locale" value="en">
+        <button class="btn btn-solid btn-sm" id="newsletterBtn" type="submit">اشترك</button>
+      </form>
+    </div>
+    <div>
+      <h4>القائمة</h4>
+      <ul>
+        <li><a href="index.html#/home">الرئيسية</a></li>
+        <li><a href="index.html#/destinations">الوجهات</a></li>
+        <li><a href="index.html#/contact">تواصل معنا</a></li>
+        <li><a href="tourism-trips-ar.html">السياحة</a></li>
+        <li><a href="umrah-trips-ar.html">العمرة</a></li>
+        <li><a href="flights-ar.html">الطيران</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>تابعنا</h4>
+      <ul>
+        <li><a href="#">إنستغرام</a></li>
+        <li><a href="#">بينتيرست</a></li>
+        <li><a href="#">أرشيف النشرة البريدية</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>المكتب</h4>
+      <ul>
+        <li style="color:var(--on-a-muted); font-size:0.92rem;"><a href="https://maps.app.goo.gl/8gnkPCFvvcEovdVB7?g_st=iw" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">المدينة المنورة، السعودية</a></li>
+        <li style="color:var(--on-a-muted); font-size:0.92rem;"><bdi dir="ltr"><a href="mailto:info@momentoftravels.com" style="color:inherit;text-decoration:none;">info@momentoftravels.com</a></bdi></li>
+        <li style="color:var(--on-a-muted); font-size:0.92rem;">الهاتف / واتساب: <bdi dir="ltr"><a href="https://wa.me/966549447703" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">+966 54 944 7703</a></bdi></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-word">لحظة سفر</div>
+  <div class="footer-bottom">
+    <span>© 2026 لحظة سفر. المحتوى بالكامل تجريبي وليس بيانات حقيقية.</span>
+    <span>الصور عبر ويكيميديا كومنز، بتراخيص CC BY / CC BY‑SA / CC0 — Martin Falbisoner، Bernard Gagnon، Eric Kilby، الهيئة السعودية للصحافة، Jorge Láscar، Dietmar Rabich، Timothy A. Gonsalves، Dronepicr، Chensiyuan</span>
+  </div>
+</footer>
+<iframe name="brevoHiddenFrame" style="display:none" title="newsletter signup" aria-hidden="true"></iframe>
+
+</div>
+
+<script src="assets/forms.js"></script>
+<script>
+(function(){
+  "use strict";
+
+  var menuToggle = document.getElementById("menuToggle");
+  var mobileMenu = document.getElementById("mobileMenu");
+  menuToggle.addEventListener("click", function(){
+    var open = mobileMenu.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(open));
+  });
+
+  var tickerNames = ["كيوتو","ساحل أمالفي","العُلا","وادي رم","سانتوريني","فاس","لشبونة والغارف","بانف"];
+  var tickerHTML = tickerNames.map(function(t){ return '<span>'+t+'</span><span class="dot">·</span>'; }).join("");
+  document.getElementById("marqueeTrack").innerHTML = tickerHTML + tickerHTML;
+
+  document.getElementById("newsletterForm").addEventListener("submit", function(){
+    var btn = document.getElementById("newsletterBtn");
+    var input = document.getElementById("newsletterEmail");
+    if(!input.value.trim()) return;
+    setTimeout(function(){
+      btn.textContent = "تم الاشتراك ✓";
+      btn.disabled = true;
+      input.disabled = true;
+    }, 500);
+  });
+
+  function netlifyFormSubmit(data){
+    return window.motSubmitForm(data);
+  }
+
+  document.getElementById("specialForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    var form = e.target;
+    var name = document.getElementById("sName").value.trim() || "صديقنا";
+    var service = document.getElementById("sService").value;
+    var submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    submitBtn.textContent = "جارٍ الإرسال…";
+    var payload = {
+      "form-name": "special-trip-request",
+      "name": name,
+      "mobile": document.getElementById("sMobile").value.trim(),
+      "email": document.getElementById("sEmail").value.trim(),
+      "service": service,
+      "travelers": document.getElementById("sQty").value,
+      "departure_date": document.getElementById("sDeparture").value,
+      "return_date": document.getElementById("sReturn").value,
+      "message": document.getElementById("sNeeds").value.trim()
+    };
+    netlifyFormSubmit(payload).then(function(){
+      document.getElementById("specialFormWrap").innerHTML =
+        '<div class="success-box">'
+        + '<span class="eyebrow">تم استلام طلبك</span>'
+        + '<h3 style="margin-top:10px; font-size:1.3rem;">يعطيك العافية '+name+'.</h3>'
+        + '<p style="margin-top:8px;">وصل طلبك لخدمة <strong style="color:var(--on-a);">'+service+'</strong> إلى فريقنا. بيتواصل معك أحد المخططين بالإيميل أو الجوال خلال يوم عمل واحد.</p>'
+        + '</div>';
+    }).catch(function(){
+      submitBtn.disabled = false;
+      submitBtn.textContent = "إرسال الطلب ←";
+      alert("صار خطأ أثناء إرسال طلبك — حاول مرة ثانية أو راسلنا على requests@momentoftravels.com");
+    });
+  });
+})();
+</script>

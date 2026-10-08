@@ -1,0 +1,314 @@
+<title>Umrah Trips — Moment of Travel</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;0,700;0,900;1,500;1,600&family=Yellowtail&family=Jost:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+
+<header class="site-nav">
+  <div class="container nav-row">
+    <a class="wordmark" href="index.html#/home" aria-label="Moment of Travel, home">
+      <img src="assets/logo.png" alt="Moment of Travel" class="wordmark-logo">
+    </a>
+    <div class="nav-cta">
+      <div class="nav-links-wrap">
+        <nav class="links" aria-label="Primary">
+          <a href="index.html#/home">Home</a>
+          <a href="index.html#/destinations">Destinations</a>
+          <a href="index.html#/contact">Contact</a>
+          <a href="tourism-trips.html">Tourism</a>
+          <a href="umrah-trips.html" aria-current="page">Umrah</a>
+          <a href="flights.html">Aviation</a>
+          <a href="umrah-trips-ar.html" class="lang-link">العربية</a>
+        </nav>
+      </div>
+      <a class="btn btn-solid btn-sm" href="index.html#/contact">Plan a Trip</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="var(--on-a)" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+    <a href="index.html#/home">Home</a>
+    <a href="index.html#/destinations">Destinations</a>
+    <a href="index.html#/contact">Contact</a>
+    <a href="tourism-trips.html">Tourism</a>
+    <a href="umrah-trips.html" aria-current="page">Umrah</a>
+    <a href="flights.html">Aviation</a>
+    <a href="umrah-trips-ar.html" class="lang-link-mobile">العربية</a>
+    <a class="btn btn-accent" href="index.html#/contact">Plan a Trip →</a>
+  </nav>
+</header>
+
+<a class="whatsapp-float" href="https://wa.me/966549447703" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15.001c0 2.647.87 5.093 2.347 7.077L4.6 28.4l6.472-1.703a11.94 11.94 0 0 0 4.929 1.05h.005c6.627 0 12-5.373 12-12S22.628 3 16.001 3zm7.034 17.146c-.298.837-1.48 1.532-2.42 1.732-.643.135-1.482.243-4.31-.926-3.617-1.498-5.945-5.166-6.127-5.406-.176-.24-1.457-1.94-1.457-3.7 0-1.76.92-2.626 1.246-2.985.298-.328.652-.41.87-.41.218 0 .436.002.626.012.2.01.47-.076.735.561.298.72.982 2.48 1.067 2.66.084.18.14.39.028.63-.11.24-.168.39-.334.6-.168.21-.352.47-.503.63-.168.18-.343.375-.147.735.196.36.872 1.44 1.873 2.332 1.286 1.148 2.372 1.505 2.732 1.673.36.168.57.14.784-.084.213-.226.917-1.07 1.163-1.44.246-.37.49-.31.826-.187.336.126 2.132 1.005 2.498 1.187.365.18.61.27.7.42.09.152.09.876-.208 1.713z"/></svg>
+</a>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marqueeTrack"></div>
+</div>
+
+<main class="container">
+
+<!-- ============ UMRAH TRIPS ============ -->
+  <section class="page" id="page-umrah-trips">
+    <section class="block" style="padding-top:56px; padding-bottom:0;">
+      <span class="eyebrow">رحلات العمرة</span>
+      <h1 style="margin-top:14px; font-size:clamp(2rem,3.6vw,2.8rem);">Umrah Trips</h1>
+      <p class="lead-in" style="margin-top:12px;">20 fully-arranged Umrah packages, from essentials to VIP — full services and pricing shown on each card. Pick one to see the breakdown and book.</p>
+      <div class="sub-tabs">
+        <a href="umrah-trips.html" aria-current="page">Umrah Trips</a>
+        <a href="special-trip-request.html">Special Trip Request</a>
+      </div>
+      <div class="subpage-banner"><img src="photos/kaaba.jpg" alt="The Kaaba surrounded by pilgrims at the Masjid al-Haram in Makkah" loading="lazy"></div>
+    </section>
+
+    <section class="block">
+      <div class="prod-grid" id="umrahGrid"></div>
+      <div class="book-panel" id="umrahBooking" hidden></div>
+    </section>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <span class="wordmark">
+        <img src="assets/logo.png" alt="Moment of Travel" class="wordmark-logo wordmark-logo-footer">
+      </span>
+      <p style="margin-top:16px; max-width:34ch;">Custom itineraries built around a handful of good moments, not a checklist of landmarks.</p>
+      <form class="newsletter-row" id="newsletterForm" action="https://4fcf9942.sibforms.com/serve/MUIFADHC22-h0RZ5U_CZ_LMVoGU3AjCE00yLiaDcUlEcDr9rz6F8Qim8swlC3sm7eUpEw7DmJyVl2zkX31-By3KNsJeOPIGxaFfn8SR557Cig2BilV2tLIJRG6TIYs4JEoqypkaFgtMMXGAbeVwLESmvB-pZ8nNf_uA0KKnwTPiIeazMGxZnkq7li3FcYe5Iu4OfJ5Fm1TVX5zsfiQ==" method="POST" target="brevoHiddenFrame" novalidate>
+        <input type="email" name="EMAIL" id="newsletterEmail" required placeholder="Your email" aria-label="Email for newsletter">
+        <input type="text" name="email_address_check" value="" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute; left:-9999px; width:1px; height:1px;">
+        <input type="hidden" name="locale" value="en">
+        <button class="btn btn-solid btn-sm" id="newsletterBtn" type="submit">Join</button>
+      </form>
+    </div>
+    <div>
+      <h4>Menu</h4>
+      <ul>
+        <li><a href="index.html#/home">Home</a></li>
+        <li><a href="index.html#/destinations">Destinations</a></li>
+        <li><a href="index.html#/contact">Contact</a></li>
+        <li><a href="tourism-trips.html">Tourism</a></li>
+        <li><a href="umrah-trips.html">Umrah</a></li>
+        <li><a href="flights.html">Aviation</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Social</h4>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Pinterest</a></li>
+        <li><a href="#">Newsletter archive</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Office</h4>
+      <ul>
+        <li style="color:var(--on-a-muted); font-size:0.92rem;"><a href="https://maps.app.goo.gl/8gnkPCFvvcEovdVB7?g_st=iw" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Medina, Saudi Arabia</a></li>
+        <li style="color:var(--on-a-muted); font-size:0.92rem;"><a href="mailto:info@momentoftravels.com" style="color:inherit;text-decoration:none;">info@momentoftravels.com</a></li>
+        <li style="color:var(--on-a-muted); font-size:0.92rem;"><a href="https://wa.me/966549447703" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">Phone / WhatsApp: +966 54 944 7703</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-word">Moment of Travel</div>
+  <div class="footer-bottom">
+    <span>© 2026 Moment of Travel. All trips are hypothetical demo content.</span>
+    <span>Photos via Wikimedia Commons, CC BY / CC BY‑SA / CC0 — Martin Falbisoner, Bernard Gagnon, Eric Kilby, Saudi Press Agency, Jorge Láscar, Dietmar Rabich, Timothy A. Gonsalves, Dronepicr, Chensiyuan</span>
+  </div>
+</footer>
+<iframe name="brevoHiddenFrame" style="display:none" title="newsletter signup" aria-hidden="true"></iframe>
+
+<script src="assets/forms.js"></script>
+<script>
+(function(){
+  "use strict";
+
+  var menuToggle = document.getElementById("menuToggle");
+  var mobileMenu = document.getElementById("mobileMenu");
+  menuToggle.addEventListener("click", function(){
+    var open = mobileMenu.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(open));
+  });
+
+  var tickerNames = ["Kyoto","Amalfi Coast","AlUla","Wadi Rum","Santorini","Fez","Lisbon & the Algarve","Banff"];
+  var tickerHTML = tickerNames.map(function(t){ return '<span>'+t+'</span><span class="dot">·</span>'; }).join("");
+  document.getElementById("marqueeTrack").innerHTML = tickerHTML + tickerHTML;
+
+  document.getElementById("newsletterForm").addEventListener("submit", function(){
+    var btn = document.getElementById("newsletterBtn");
+    var input = document.getElementById("newsletterEmail");
+    if(!input.value.trim()) return;
+    setTimeout(function(){
+      btn.textContent = "Joined ✓";
+      btn.disabled = true;
+      input.disabled = true;
+    }, 500);
+  });
+
+  var ICON_UMRAH = '<svg class="prod-icon" viewBox="0 0 24 24" fill="none"><path d="M14 3a9 9 0 1 0 7 14.5A7 7 0 0 1 14 3Z" fill="var(--accent-2)"/><path d="M19 3l.6 1.6L21 5l-1.4.6L19 7l-.6-1.4L17 5l1.4-.4L19 3Z" fill="var(--accent-2)"/></svg>';
+
+  var UMRAH_PACKAGES = [
+    {name:"Umrah Essentials", tier:"3-Star Hotel", nights:7, price:3800},
+    {name:"Umrah Comfort", tier:"4-Star Hotel, Haram View", nights:7, price:6200},
+    {name:"Umrah Premium", tier:"5-Star Hotel, Haram View", nights:7, price:9800},
+    {name:"Umrah Essentials", tier:"3-Star Hotel", nights:10, price:4900},
+    {name:"Umrah Comfort", tier:"4-Star Hotel, Haram View", nights:10, price:7900},
+    {name:"Umrah Premium", tier:"5-Star Hotel, Haram View", nights:10, price:12500},
+    {name:"Umrah Essentials", tier:"3-Star Hotel", nights:14, price:6400},
+    {name:"Umrah Comfort", tier:"4-Star Hotel, Haram View", nights:14, price:10200},
+    {name:"Umrah Premium", tier:"5-Star Hotel, Haram View", nights:14, price:16800},
+    {name:"Family Umrah Package", tier:"4-Star Hotel, connecting rooms", nights:10, price:8600},
+    {name:"Express Umrah", tier:"3-Star Hotel, weekend trip", nights:4, price:2600},
+    {name:"Ramadan Umrah — Last 10 Nights", tier:"5-Star Hotel, Haram View", nights:10, price:19500},
+    {name:"Ramadan Umrah — Full Month", tier:"4-Star Hotel", nights:29, price:24800},
+    {name:"Group Umrah Departure", tier:"4-Star Hotel, guided group", nights:9, price:7400},
+    {name:"VIP Private Umrah", tier:"5-Star Hotel, private guide & car", nights:7, price:15600},
+    {name:"Senior-Friendly Umrah", tier:"4-Star Hotel, wheelchair assistance", nights:8, price:8100},
+    {name:"Umrah + Madinah Extension", tier:"4-Star Hotels, both cities", nights:12, price:9700},
+    {name:"Solo Traveler Umrah", tier:"3-Star Hotel, shared room", nights:7, price:3400},
+    {name:"Business Class Umrah", tier:"5-Star Hotel, business-class flights", nights:7, price:22500},
+    {name:"Student Umrah Package", tier:"3-Star Hotel, group rate", nights:6, price:2900}
+  ];
+
+
+  function netlifyFormSubmit(data){
+    return window.motSubmitForm(data);
+  }
+
+  function prodCard(p, idx){
+    return '<div class="prod-card">'
+      + ICON_UMRAH
+      + '<h3>'+p.name+'</h3>'
+      + '<div class="prod-meta">'+(p.tier || p.region)+' · '+p.nights+' nights</div>'
+      + '<div class="prod-foot"><span class="price">SAR '+p.price.toLocaleString()+'</span>'
+      + '<button class="btn btn-sm btn-accent" data-idx="'+idx+'" type="button">Book →</button></div>'
+      + '</div>';
+  }
+
+  document.getElementById("umrahGrid").innerHTML = UMRAH_PACKAGES.map(function(p,i){ return prodCard(p,i); }).join("");
+
+  function reduceMotion(){ return window.matchMedia("(prefers-reduced-motion: reduce)").matches; }
+  function bookingRef(){ return "MOT-" + Math.floor(100000 + Math.random()*900000); }
+
+  var bookWrap = document.getElementById("umrahBooking");
+
+  function openBooking(idx){
+    var p = UMRAH_PACKAGES[idx];
+    bookWrap.hidden = false;
+    bookWrap.innerHTML =
+      '<span class="eyebrow" style="color:var(--accent)">Book this trip</span>'
+      + '<h3 style="color:var(--on-c); margin-top:10px;">'+p.name+'</h3>'
+      + '<p>'+(p.tier || p.region)+' · '+p.nights+' nights</p>'
+      + '<form id="bkForm">'
+        + '<div class="field-row">'
+          + '<div class="field"><label for="bkName">Full name</label><input id="bkName" required placeholder="Jordan Lee"></div>'
+          + '<div class="field"><label for="bkMobile">Mobile number</label><input id="bkMobile" required placeholder="+966 5x xxx xxxx"></div>'
+        + '</div>'
+        + '<div class="field-row">'
+          + '<div class="field"><label for="bkEmail">Email</label><input id="bkEmail" type="email" required placeholder="jordan@email.com"></div>'
+          + '<div class="field"><label for="bkQty">Travelers</label><input id="bkQty" type="number" min="1" value="1"></div>'
+        + '</div>'
+        + '<div class="field"><label for="bkNeeds">What are you looking for on this trip?</label><textarea id="bkNeeds" rows="3" placeholder="e.g. private tour, family-friendly pace, specific sites to visit..."></textarea></div>'
+        + '<div class="book-summary"><span>Price per traveler</span><span>SAR '+p.price.toLocaleString()+'</span></div>'
+        + '<div class="book-total" id="bkTotal">Total: SAR '+p.price.toLocaleString()+'</div>'
+        + '<button type="submit" class="btn btn-accent" style="margin-top:18px;">Continue to payment →</button>'
+      + '</form>';
+
+    var qtyInput = document.getElementById("bkQty");
+    var totalEl = document.getElementById("bkTotal");
+    qtyInput.addEventListener("input", function(){
+      var qty = Math.max(1, parseInt(this.value,10) || 1);
+      totalEl.textContent = "Total: SAR " + (p.price*qty).toLocaleString();
+    });
+
+    document.getElementById("bkForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      var name = document.getElementById("bkName").value.trim();
+      var mobile = document.getElementById("bkMobile").value.trim();
+      var email = document.getElementById("bkEmail").value.trim();
+      var qty = Math.max(1, parseInt(document.getElementById("bkQty").value,10) || 1);
+      var needs = document.getElementById("bkNeeds").value.trim();
+      renderBookingPayment(p, {name:name, mobile:mobile, email:email, qty:qty, needs:needs});
+    });
+
+    bookWrap.scrollIntoView({behavior: reduceMotion() ? "auto" : "smooth", block:"center"});
+  }
+
+  function showBookingSuccess(p, info, total, ref, paymentNote){
+    bookWrap.innerHTML =
+      '<div class="success-box">'
+      + '<span class="eyebrow">Booking received</span>'
+      + '<h3 style="margin-top:10px; font-size:1.3rem;">Thanks, '+info.name+' — you\'re booked.</h3>'
+      + '<p style="margin-top:8px;">A confirmation and invoice for <strong style="color:var(--on-a);">'+p.name+'</strong> (SAR '+total.toLocaleString()+') has been sent to <strong style="color:var(--on-a);">'+info.email+'</strong>. Reference: <strong>'+ref+'</strong>. '+paymentNote+'</p>'
+      + '</div>';
+  }
+
+  function renderBookingPayment(p, info){
+    var total = p.price * info.qty;
+    bookWrap.innerHTML =
+      '<span class="eyebrow" style="color:var(--accent)">Review &amp; payment</span>'
+      + '<h3 style="color:var(--on-c); margin-top:10px;">'+p.name+'</h3>'
+      + '<form id="bkPayForm">'
+        + '<div class="book-summary"><span>Traveler</span><span>'+info.name+'</span></div>'
+        + '<div class="book-summary"><span>Contact</span><span>'+info.mobile+' · '+info.email+'</span></div>'
+        + '<div class="book-summary"><span>Travelers</span><span>'+info.qty+'</span></div>'
+        + '<div class="book-summary"><span>Looking for</span><span>'+(info.needs || "Not specified")+'</span></div>'
+        + '<div class="book-total">Total due: SAR '+total.toLocaleString()+'</div>'
+        + '<div class="pay-options">'
+          + '<label><input type="radio" name="payMethod" value="bank" checked> Pay via bank transfer — details sent with the invoice</label>'
+          + '<label><input type="radio" name="payMethod" value="agent"> Pay by card over the phone with a planner</label>'
+        + '</div>'
+        + '<button type="submit" class="btn btn-accent" id="bkPaySubmit">Confirm booking →</button>'
+      + '</form>';
+
+    var payForm = document.getElementById("bkPayForm");
+    var submitBtn = document.getElementById("bkPaySubmit");
+
+    function recordBooking(paymentMethod, paymentStatus, ref){
+      return netlifyFormSubmit({
+        "form-name": "booking",
+        "trip_type": "umrah",
+        "package": p.name,
+        "name": info.name,
+        "mobile": info.mobile,
+        "email": info.email,
+        "travelers": info.qty,
+        "needs": info.needs || "",
+        "total_sar": total,
+        "payment_method": paymentMethod,
+        "payment_status": paymentStatus,
+        "booking_ref": ref
+      });
+    }
+
+    function currentMethod(){
+      return payForm.querySelector('input[name="payMethod"]:checked').value;
+    }
+
+    payForm.addEventListener("submit", function(e){
+      e.preventDefault();
+      var method = currentMethod();
+      var ref = bookingRef();
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Confirming…";
+      recordBooking(method, "not_charged_yet", ref).then(function(){
+        var note = method === "agent"
+          ? "A planner will call you to take payment by card."
+          : "Our planner will follow up to finalize payment and details.";
+        showBookingSuccess(p, info, total, ref, note);
+      }).catch(function(){
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Confirm booking →";
+        alert("Something went wrong confirming your booking — please try again, or email info@momentoftravels.com directly.");
+      });
+    });
+  }
+
+  document.addEventListener("click", function(e){
+    var b = e.target.closest("#umrahGrid [data-idx]");
+    if(!b) return;
+    openBooking(parseInt(b.dataset.idx,10));
+  });
+})();
+</script>

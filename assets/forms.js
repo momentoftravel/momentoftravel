@@ -2,7 +2,7 @@
    1. Create a free account at https://web3forms.com, enter the email where you want requests delivered,
       and copy the "Access Key" they email you.
    2. Paste it below in place of 649ce9bc-d668-464f-a58d-bc4f37af9e7e. That's the only change needed. */
-window.MOT_FORM_KEY = "649ce9bc-d668-464f-a58d-bc4f37af9e7e";
+window.MOT_FORM_KEY = "5eade745-585e-4fbc-9066-26168e78ef84";
 
 window.motSubmitForm = function(data){
   var payload = {};

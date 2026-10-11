@@ -76,9 +76,9 @@
         <div class="contact-info-card">
           <h3 style="color:var(--on-c);">الخدمات المتوفرة والتواصل</h3>
           <p style="margin-top:8px;">إذا كنت تمثل شركة طيران وتبحث عن وكالة عامة، فريق الشراكات لدينا جاهز لشرح التغطية والتقارير وشروط الخدمة.</p>
-          <div class="row"><span>البريد الإلكتروني</span><bdi dir="ltr"><a href="mailto:partnerships@momentoftravels.com" style="color:inherit;text-decoration:none;">partnerships@momentoftravels.com</a></bdi></div>
+          <div class="row"><span>البريد الإلكتروني</span><bdi dir="ltr"><a href="mailto:aviation@momentoftravels.com" style="color:inherit;text-decoration:none;">aviation@momentoftravels.com</a></bdi></div>
           <div class="row"><span>الهاتف / واتساب</span><bdi dir="ltr"><a href="https://wa.me/966549447703" target="_blank" rel="noopener" style="color:inherit;">+966 54 944 7703</a></bdi></div>
-          <div class="row"><span>أوقات الدوام</span><span><bdi dir="ltr">8ص–6م</bdi> بتوقيت المحيط الهادئ، من الإثنين للجمعة</span></div>
+          <div class="row"><span>أوقات الدوام</span><span style="text-align:end;">من السبت إلى الخميس، <bdi dir="ltr">9ص–10م</bdi><br>الجمعة إجازة</span></div>
         </div>
       </div>
     </section>
@@ -137,8 +137,7 @@
     <div>
       <h4>تابعنا</h4>
       <ul>
-        <li><a href="#">إنستغرام</a></li>
-        <li><a href="#">بينتيرست</a></li>
+        <li><a href="https://www.instagram.com/mot_aviationservices/" target="_blank" rel="noopener">إنستغرام</a></li>
         <li><a href="#">أرشيف النشرة البريدية</a></li>
       </ul>
     </div>
@@ -146,14 +145,14 @@
       <h4>المكتب</h4>
       <ul>
         <li style="color:var(--on-a-muted); font-size:0.92rem;"><a href="https://maps.app.goo.gl/8gnkPCFvvcEovdVB7?g_st=iw" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">المدينة المنورة، السعودية</a></li>
-        <li style="color:var(--on-a-muted); font-size:0.92rem;"><bdi dir="ltr"><a href="mailto:info@momentoftravels.com" style="color:inherit;text-decoration:none;">info@momentoftravels.com</a></bdi></li>
+        <li style="color:var(--on-a-muted); font-size:0.92rem;"><bdi dir="ltr"><a href="mailto:aviation@momentoftravels.com" style="color:inherit;text-decoration:none;">aviation@momentoftravels.com</a></bdi></li>
         <li style="color:var(--on-a-muted); font-size:0.92rem;">الهاتف / واتساب: <bdi dir="ltr"><a href="https://wa.me/966549447703" target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">+966 54 944 7703</a></bdi></li>
       </ul>
     </div>
   </div>
   <div class="footer-word">لحظة سفر</div>
   <div class="footer-bottom">
-    <span>© 2026 لحظة سفر. المحتوى بالكامل تجريبي وليس بيانات حقيقية.</span>
+    <span>© 2026 لحظة سفر.</span>
     <span>الصور عبر ويكيميديا كومنز، بتراخيص CC BY / CC BY‑SA / CC0 — Martin Falbisoner، Bernard Gagnon، Eric Kilby، الهيئة السعودية للصحافة، Jorge Láscar، Dietmar Rabich، Timothy A. Gonsalves، Dronepicr، Chensiyuan</span>
   </div>
 </footer>
@@ -173,7 +172,7 @@
     menuToggle.setAttribute("aria-expanded", String(open));
   });
 
-  var tickerNames = ["كيوتو","ساحل أمالفي","العُلا","وادي رم","سانتوريني","فاس","لشبونة والغارف","بانف"];
+  var tickerNames = ["الصين","المالديف","ماليزيا","سنغافورة","سريلانكا","تايلاند","فيتنام"];
   var tickerHTML = tickerNames.map(function(t){ return '<span>'+t+'</span><span class="dot">·</span>'; }).join("");
   document.getElementById("marqueeTrack").innerHTML = tickerHTML + tickerHTML;
 
@@ -209,7 +208,7 @@
     }).catch(function(){
       submitBtn.disabled = false;
       submitBtn.textContent = "اطلب مكالمة ←";
-      alert("حدث خطأ أثناء إرسال طلبك — يرجى المحاولة مرة أخرى أو مراسلتنا على partnerships@momentoftravels.com");
+      alert("حدث خطأ أثناء إرسال طلبك — يرجى المحاولة مرة أخرى أو مراسلتنا على aviation@momentoftravels.com");
     });
   });
 })();

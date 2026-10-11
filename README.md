@@ -16,7 +16,7 @@ A plain static website in English and Arabic. No build step, no server code: it 
 | `assets/offers.js` | The 17 October offers (prices, nights, route, what is included), in English and Arabic. |
 | `assets/forms.js` | The Web3Forms access key and the shared form-sending code. |
 | `assets/styles.css` / `assets/styles-ar.css` | Colours, fonts and layout for the English and Arabic pages. |
-| `assets/logo.png` | The logo (transparent background). |
+| `assets/logo-v4.png` | The logo (transparent background). |
 | `photos/` | Photos used on the site. Don't rename them. |
 
 The language switcher (`العربية` / `EN`) links each page to its twin, so keep all files in the same folder.

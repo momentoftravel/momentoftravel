@@ -577,6 +577,7 @@
   .service-cell{ display:flex; flex-direction:column; gap:8px; }
   .service-link{ font-size:0.88rem; font-weight:600; color:var(--accent-2); text-decoration:none; padding-inline-start:4px; }
   .service-link:hover{ text-decoration:underline; }
+  .service-links{ display:flex; flex-wrap:wrap; gap:6px 18px; }
   .hero-poster-photo:has(img.hero-logo){ background:transparent; }
 
   /* Real offers: included services list in the booking panel */

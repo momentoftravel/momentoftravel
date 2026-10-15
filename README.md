@@ -45,6 +45,14 @@ Every form (contact, special trip request, GSA, Aviation Support, bookings) goes
 
 To change one of these, use find-and-replace across all the `.html` files.
 
+## Licenses
+
+- GSA (Airport Operations) & Supervision: 36/2, General Authority of Civil Aviation (GACA).
+- Travel & Tourism Services: 73105843, Saudi Ministry of Tourism.
+- General Aviation Support Services Provider: 8/2, GACA.
+
+They are listed in the footer of the home pages (`index.html`, `ar.html`, class `footer-licenses`). The GSA page shows 36/2 and the Aviation Support page shows 8/2 in their own Licenses section.
+
 ## Publishing changes (GitHub Pages)
 
 1. Open the repository on github.com, open the file, click the pencil icon, edit, and click **Commit changes**. Or use **Add file → Upload files** to replace several files (keep the `assets` and `photos` folders).
@@ -54,5 +62,5 @@ To change one of these, use find-and-replace across all the `.html` files.
 
 - The Umrah packages are demo content: replace the `UMRAH_PACKAGES` list near the bottom of the script in `umrah-trips.html` and `umrah-trips-ar.html` with the real ones.
 - The footer "Newsletter archive" link has no destination yet.
-- Make sure the mailboxes info@, aviation@ and requests@momentoftravels.com exist.
+- Optional: create a Web3Forms key for requests@momentoftravels.com and paste it into `MOT_FORM_KEY_REQUESTS` in `assets/forms.js` so the special trip request form reaches that inbox (until then it uses the main key).
 - The footer lists photo credits (Wikimedia Commons). Remove them if those photos are replaced with your own.

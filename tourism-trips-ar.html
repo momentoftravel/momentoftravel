@@ -55,7 +55,7 @@
     <section class="block" style="padding-top:56px; padding-bottom:0;">
       <span class="eyebrow">Tourism Trips</span>
       <h1 style="margin-top:14px; font-size:clamp(1.9rem,3.4vw,2.6rem);">الرحلات السياحية</h1>
-      <p class="lead-in" style="margin-top:12px;">١٧ عرضًا من عروض أكتوبر — عائلي وشهر عسل وللشخصين. اختر عرضًا لمشاهدة ما يشمله والحجز.</p>
+      <p class="lead-in" style="margin-top:12px;">٣٦ عرضًا من عروض نوفمبر وأكتوبر — عائلي وشهر عسل وللشخصين. اختر عرضًا لمشاهدة ما يشمله والحجز.</p>
       <div class="sub-tabs">
         <a href="tourism-trips-ar.html" aria-current="page">الرحلات السياحية</a>
         <a href="special-trip-request-ar.html">طلب رحلة خاصة</a>
@@ -159,7 +159,8 @@
       region: o.route.ar,
       nights: o.nights,
       price: o.price,
-      includes: o.includes.ar
+      includes: o.includes.ar,
+      month: o.month, stars: o.stars, img: o.img
     };
   });
 
@@ -170,9 +171,9 @@
 
   function prodCard(p, idx){
     return '<div class="prod-card">'
-      + ICON_TOURISM
+      + (p.img ? '<div class="prod-photo"><img src="'+p.img+'" alt="" loading="lazy"></div>' : ICON_TOURISM)
       + '<h3>'+p.name+'</h3>'
-      + '<div class="prod-meta">'+(p.tier || p.region)+' · '+p.nights+' ليالٍ</div>'
+      + '<div class="prod-meta">'+(p.tier || p.region)+' · '+p.nights+' ليالٍ'+'</div>'
       + '<div class="prod-foot"><span class="price">'+p.price.toLocaleString()+' ر.س<small class="per"> للفرد</small></span>'
       + '<button class="btn btn-sm btn-accent" data-idx="'+idx+'" type="button">احجز ←</button></div>'
       + '</div>';

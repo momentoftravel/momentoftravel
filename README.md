@@ -7,7 +7,7 @@ A plain static website in English and Arabic. No build step, no server code: it 
 | File | What it is |
 |---|---|
 | `index.html` / `ar.html` | Main site (English / Arabic): Home, Destinations, Contact. Sections use hash links such as `#/destinations`. |
-| `tourism-trips.html` / `tourism-trips-ar.html` | Tourism page: the 17 October offers as cards, plus the booking and payment steps. |
+| `tourism-trips.html` / `tourism-trips-ar.html` | Tourism page: the November (19) and October (17) offers as cards with a small picture each, plus the booking and payment steps. |
 | `umrah-trips.html` / `umrah-trips-ar.html` | Umrah page: 20 packages (still demo content), booking and payment steps. |
 | `special-trip-request.html` / `-ar.html` | Custom trip request form. |
 | `flights.html` / `flights-ar.html` | Aviation hub page (links to the two pages below). |
@@ -18,12 +18,13 @@ A plain static website in English and Arabic. No build step, no server code: it 
 | `assets/styles.css` / `assets/styles-ar.css` | Colours, fonts and layout for the English and Arabic pages. |
 | `assets/logo-v4.png` | The logo (transparent background). |
 | `photos/` | Photos used on the site. Don't rename them. |
+| `photos/offers/` | Small pictures on the Tourism offer cards (`n01`–`n19` = November posters, `c-<country>` = October offers). |
 
 The language switcher (`العربية` / `EN`) links each page to its twin, so keep all files in the same folder.
 
-## Changing the October offers (prices, nights, what is included)
+## Changing the offers (prices, nights, what is included)
 
-Open `assets/offers.js`. Each offer is one line like:
+Open `assets/offers.js`. October offers are the `o(...)` lines; November offers are the `n(...)` lines lower down (the first number is the picture `photos/offers/nXX.jpg`). The Home page Destinations still shows only the October offers. Each offer is one line like:
 
 `o("china-family", "family", CHINA, CHINA, 8, 4225, SH_GZ, INC.breakfast)`
 

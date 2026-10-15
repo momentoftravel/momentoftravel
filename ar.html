@@ -323,7 +323,7 @@
   "use strict";
 
   /* ---------------- Data ---------------- */
-  var DESTINATIONS = (window.MOT_OFFERS || []).map(function(o){
+  var DESTINATIONS = (window.MOT_OFFERS_OCT || []).map(function(o){
     return {
       id: o.id, name: o.title.ar, region: o.route.ar, type: o.kind,
       nights: o.nights, price: o.price
@@ -387,7 +387,7 @@
 
   document.getElementById("heroArt").innerHTML = '<img class="hero-logo" src="assets/logo-v4.png" alt="شعار لحظة سفر">';
 
-  var tickerItems = (window.MOT_OFFERS || []).map(function(o){ return o.country.ar; }).filter(function(n,i,a){ return a.indexOf(n) === i; });
+  var tickerItems = (window.MOT_OFFERS_OCT || []).map(function(o){ return o.country.ar; }).filter(function(n,i,a){ return a.indexOf(n) === i; });
   var tickerHTML = tickerItems.map(function(t){ return '<span>'+t+'</span><span class="dot">·</span>'; }).join("");
   document.getElementById("marqueeTrack").innerHTML = tickerHTML + tickerHTML;
 
